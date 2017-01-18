@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+
+credentials.json
+
+dist/*
+
+.tmp
+.sass-cache
+.DS_Store

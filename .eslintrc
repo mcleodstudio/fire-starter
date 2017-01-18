@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "comma-dangle": [ 2, "always-multiline" ],
+    "curly": 2,
+    "eqeqeq": [ 2, "smart" ],
+    "indent": [ 2, 2 ],
+    "linebreak-style": [ 2, "unix" ],
+    "no-unused-vars": 0,
+    "no-var": 2,
+    "no-class-assign": 0,
+    "object-curly-spacing": [ "error", "always" ],
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "semi": [ 2, "always" ],
+    "space-infix-ops": 2,
+    "quotes": [ 2, "single", { "avoidEscape": true, "allowTemplateLiterals": true } ]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "$": true,
+    "jQuery": true,
+  }
+}

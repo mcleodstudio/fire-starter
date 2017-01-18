@@ -1,0 +1,73 @@
+@import 'variables';
+
+/* base styles */
+
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 0.875rem;
+}
+body {
+  margin: 60px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+
+/* input placeholders */
+
+::-webkit-input-placeholder {
+  color: #D3D3D3;
+}
+:-moz-placeholder {
+  color: #D3D3D3;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #D3D3D3;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #D3D3D3;
+}
+
+
+/* typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+
+/* misc elements */
+
+img {
+  max-width: 100%;
+}
+a {
+  cursor: pointer;
+}
+
+
+/* media queries */
+
+@media (min-width: $md) {
+  html {
+    font-size: 1rem;
+  }
+}
