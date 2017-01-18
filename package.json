@@ -1,6 +1,14 @@
 {
   "name": "fire-starter",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "description": "🔥 A simple, lightweight, modern asset pipeline.",
+  "keywords": ["grunt", "babel", "pug", "jade", "sass", "starter"],
+  "author": "Seth Mcleod <me@sethmcleod.com> (https://sethmcleod.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sethmcleod/fire-starter.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "grunt",
