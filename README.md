@@ -45,11 +45,11 @@ npm run build
 
 ### Don't Need jQuery?
 
-jQuery is included by default, but you [might not need it](http://youmightnotneedjquery.com/). To uninstall, just remove the dependency from `bower.json` and the _copy:jquery_ task (and references) in `Gruntfile.js`. Also delete the jQuery scripts near the bottom of `layout.pug`. If you don't need Bower either, you can delete that file all-together and remove the _check bower dependencies_ section of `Gruntfile.js` on lines **212-218**.
+jQuery is included by default, but you [might not need it](http://youmightnotneedjquery.com/). To uninstall, just remove the dependency from `bower.json` and the _copy:jquery_ task (and references) in `Gruntfile.js`. Also delete the jQuery scripts near the bottom of `layout.pug`. If you don't need Bower either, you can delete that file all-together and remove the _check bower dependencies_ section of `Gruntfile.js` on lines **212-218**, as well as the _bower_ package from `package.json`.
 
 ### Don't Need AWS?
 
-If you don't need AWS S3 and Cloudfront integration, just remove the _aws_ and _cloudfront_ tasks in `Gruntfile.js` on lines **228-257** as well as the _deploy_ task on line **263**. There is a _rename_ function on lines **156-158** that removes the _.html_ extension from files to make the S3 urls look nice. You can remove that, as well as the _grunt-aws_ task from `package.json`.
+If you don't need AWS S3 and Cloudfront integration, just remove the _aws_ and _cloudfront_ tasks in `Gruntfile.js` on lines **228-257** as well as the _deploy_ task on line **263**. There is a _rename_ function on lines **156-158** that removes the _.html_ extension from files to make the S3 urls look nice. You can remove that, as well as the _grunt-aws_ package from `package.json`.
 
 ---
 Built with ♥ at [Mcleod Studio](https://mcleod.studio)

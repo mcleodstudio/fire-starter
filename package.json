@@ -2,7 +2,14 @@
   "name": "fire-starter",
   "version": "1.0.2",
   "description": "🔥 A simple, lightweight, modern asset pipeline.",
-  "keywords": ["grunt", "babel", "pug", "jade", "sass", "starter"],
+  "keywords": [
+    "grunt",
+    "babel",
+    "pug",
+    "jade",
+    "sass",
+    "starter"
+  ],
   "author": "Seth Mcleod <me@sethmcleod.com> (https://sethmcleod.com)",
   "license": "MIT",
   "repository": {
@@ -24,6 +31,7 @@
     "babel-eslint": "7.1.1",
     "babel-preset-latest": "6.16.0",
     "babel-preset-stage-0": "6.16.0",
+    "bower": "1.8.0",
     "cssnano": "3.10.0",
     "eslint": "3.13.1",
     "eslint-config-airbnb": "14.0.0",
