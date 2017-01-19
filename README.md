@@ -1,5 +1,7 @@
 # 🔥 Fire Starter
 
+[![devDependencies](https://david-dm.org/sethmcleod/fire-starter/dev-status.svg)](https://david-dm.org/sethmcleod/fire-starter/dev-status.svg#info=devDependencies)
+
 A simple, lightweight, modern asset pipeline. Uses Pug (Jade) for markup, Sass for styles, Babel for Javascript and Grunt to compile, optimize, serve and watch. Support for S3 bucket uploading and Cloudfront invalidation is included.
 
 ### What You Need
