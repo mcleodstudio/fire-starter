@@ -17,10 +17,10 @@
     "url": "https://github.com/sethmcleod/fire-starter.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "grunt",
     "build": "grunt build",
-    "deploy": "grunt deploy"
+    "deploy": "grunt deploy",
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"    
   },
   "engines": {
     "node": ">=7.3",

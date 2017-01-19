@@ -26,7 +26,7 @@ npm install
 
 ```bash
 # Starts a local server & watches for file changes
-npm run dev
+npm start
 ```
 
 **Deployment**
