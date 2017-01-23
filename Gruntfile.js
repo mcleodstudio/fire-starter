@@ -181,6 +181,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true,
+      },
       pug: {
         files: 'app/views/**/*.pug',
         tasks: ['pug:dev', 'htmlmin'],
@@ -196,11 +199,6 @@ module.exports = function(grunt) {
       copy: {
         files: 'media/**/*',
         tasks: ['copy:media'],
-      },
-      options: {
-        livereload: {
-          port: 35830,
-        },
       },
     },
 

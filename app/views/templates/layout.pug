@@ -82,6 +82,10 @@ html(lang=lang)
 
       include footer
 
+      //- Live reload
+      if dev
+        script(src="//localhost:35729/livereload.js")
+
       //- jQuery CDN and local fallback
       script(src="https://code.jquery.com/jquery-3.1.1.min.js")
       script.
