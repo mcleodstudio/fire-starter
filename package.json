@@ -20,20 +20,20 @@
     "build": "grunt build",
     "deploy": "grunt deploy",
     "start": "grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"    
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": ">=7.3",
     "npm": ">=3.10"
   },
   "devDependencies": {
-    "autoprefixer": "6.6.1",
+    "autoprefixer": "6.7.0",
     "babel-eslint": "7.1.1",
-    "babel-preset-latest": "6.16.0",
-    "babel-preset-stage-0": "6.16.0",
+    "babel-preset-latest": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
     "bower": "1.8.0",
     "cssnano": "3.10.0",
-    "eslint": "3.13.1",
+    "eslint": "3.14.0",
     "eslint-config-airbnb": "14.0.0",
     "grunt": "1.0.1",
     "grunt-aws": "0.6.2",
