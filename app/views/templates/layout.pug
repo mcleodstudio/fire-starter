@@ -74,6 +74,10 @@ html(lang=lang)
 
     include ../3rd-party/google-analytics
 
+    //- FOUC prevention
+    style.
+      .hidden { display:none; }
+
     body
       .wrap
         include header
@@ -92,6 +96,16 @@ html(lang=lang)
         if (typeof jQuery == 'undefined') {
           document.write(unescape('%3Cscript src="/scripts/jquery.min.js?v="+stamp+" "%3E%3C/script%3E'));
         }
+
+      //- FOUC prevention
+      script.
+        $('html').addClass('hidden');
+        $(document).ready(function() {
+          // show html
+          $('html').removeClass('hidden');
+        });
+
+      //- Main scripts
       script(src="/scripts/scripts.min.js?v="+stamp)
 
       block scripts
