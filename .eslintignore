@@ -1,3 +1,4 @@
 /app/views/**
 /dist/**
 /build/**
+Gruntfile.js
