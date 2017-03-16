@@ -12,7 +12,7 @@ A simple, lightweight, modern asset pipeline. Uses Pug (Jade) for markup, Sass f
 
 ### AWS Credentials
 
-Bundled with this project in a `credentials.json.sample` file that should be renamed to `credentials.json` and edited so it contains the correct credentials. This file is gitignored by default.
+Bundled with this project in a `credentials.json.sample` file that should be renamed to `credentials.json` and edited so it contains the correct credentials. An `accessKeyId` and `secretAccessKey` are required in order for deployment to work correctly. This file is gitignored by default.
 
 ### Dev Commands
 
@@ -49,7 +49,7 @@ jQuery is included by default, but you [might not need it](http://youmightnotnee
 
 ### Don't Need AWS?
 
-If you don't need AWS S3 and Cloudfront integration, just remove the _aws_ and _cloudfront_ tasks in `Gruntfile.js` on lines **228-257** as well as the _deploy_ task on line **263**. There is a _rename_ function on lines **156-158** that removes the _.html_ extension from files to make the S3 urls look nice. You can remove that, as well as the _grunt-aws_ package from `package.json`.
+If you don't need AWS S3 and Cloudfront integration, just remove the _aws_ and _cloudfront_ tasks in `Gruntfile.js` on lines **228-257** as well as the _deploy_ task on line **263**. There is a _rename_ function on lines **156-158** that removes the _.html_ extension from files to make the S3 urls look nice. You can remove that, as well as the _grunt-aws_ package from `package.json` and the `credentials.json` file.
 
 ---
 Built with ♥ at [Mcleod Studio](https://mcleod.studio)
