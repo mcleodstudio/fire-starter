@@ -125,7 +125,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '.tmp/scripts/scripts.min.js': 'app/scripts/main.js',
+          '.tmp/scripts/main.min.js': 'app/scripts/main.js',
         },
       },
     },
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          '.tmp/scripts/scripts.min.js': '.tmp/scripts/scripts.min.js',
+          '.tmp/scripts/main.min.js': '.tmp/scripts/main.min.js',
         },
       },
     },
