@@ -78,34 +78,34 @@ html(lang=lang)
     style.
       .hidden { display:none; }
 
-    body
-      .wrap
-        include header
-        main(role="main")
-          block content
+  body
+    .wrap
+      include header
+      main(role="main")
+        block content
 
-      include footer
+    include footer
 
-      //- Live reload
-      if dev
-        script(src="//localhost:35729/livereload.js")
+    //- Live reload
+    if dev
+      script(src="//localhost:35729/livereload.js")
 
-      //- jQuery CDN and local fallback
-      script(src="https://code.jquery.com/jquery-3.1.1.min.js")
-      script.
-        if (typeof jQuery == 'undefined') {
-          document.write(unescape('%3Cscript src="/scripts/jquery.min.js?v="+stamp+" "%3E%3C/script%3E'));
-        }
+    //- jQuery CDN and local fallback
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+    script.
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape('%3Cscript src="/scripts/jquery.min.js?v="+stamp+" "%3E%3C/script%3E'));
+      }
 
-      //- FOUC prevention
-      script.
-        $('html').addClass('hidden');
-        $(document).ready(function() {
-          // show html
-          $('html').removeClass('hidden');
-        });
+    //- FOUC prevention
+    script.
+      $('html').addClass('hidden');
+      $(document).ready(function() {
+        // show html
+        $('html').removeClass('hidden');
+      });
 
-      //- Main scripts
-      script(src="/scripts/scripts.min.js?v="+stamp)
+    //- Main scripts
+    script(src="/scripts/scripts.min.js?v="+stamp)
 
-      block scripts
+    block scripts
