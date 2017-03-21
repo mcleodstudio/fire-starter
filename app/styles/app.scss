@@ -12,15 +12,23 @@ html {
 }
 
 body {
-  margin: 60px auto;
-  max-width: 650px;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
   font-size: 18px;
   color: #444;
-  padding: 0 10px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  // margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  // padding: 0 0 100px;
 }
 
 .hidden {
@@ -78,3 +86,8 @@ a {
     font-size: 1rem;
   }
 }
+
+
+/* imports */
+
+@import 'index';
