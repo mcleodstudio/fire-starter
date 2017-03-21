@@ -1,6 +1,6 @@
 # 🔥 Fire Starter
 
-A simple, lightweight, modern asset pipeline. Uses Pug (Jade) for markup, Sass for styles, Babel for Javascript and Grunt to compile, optimize, serve and watch. Support for S3 bucket uploading and Cloudfront invalidation is included.
+A simple, lightweight, modern asset pipeline. Uses Pug (Jade) for markup, Sass for styles, Babel for Javascript (ES6+) and Grunt to compile, optimize, serve and watch. Support for S3 bucket uploading and Cloudfront invalidation is included.
 
 ### What You Need
 
