@@ -1,8 +1,3 @@
-doctype html
-// [if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]
-// [if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]
-// [if IE 8]>         <html class='no-js lt-ie9'> <![endif]
-// [if gt IE 8]><!
 block vars
   - title = 'Fire Starter'
   - description = 'A simple, lightweight, modern asset pipeline.'
@@ -15,8 +10,10 @@ block vars
   - twitterHandle = '@mcleodstudio'
   - author = 'Mcleod Studio'
   - lang = 'en'
+
+doctype html
+
 html(lang=lang)
-  //<![endif]
 
   head
     meta(charset="utf-8")
@@ -76,9 +73,10 @@ html(lang=lang)
 
     //- FOUC prevention
     style.
-      .hidden { display:none; }
+      .hidden { display: none; }
 
   body
+    //- wrap is used for sticky footer
     .wrap
       include header
       main(role="main")
