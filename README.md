@@ -1,5 +1,7 @@
 # 🔥 Fire Starter
 
+[![Node Package Manager](https://img.shields.io/badge/npm-v1.0.5-red.svg)](https://www.npmjs.com/package/fire-starter)
+
 A simple, lightweight, modern asset pipeline. Uses Pug (Jade) for markup, Sass for styles, Babel for Javascript (ES6+) and Grunt to compile, optimize, serve and watch. Support for S3 bucket uploading and Cloudfront invalidation is included.
 
 ### What You Need
