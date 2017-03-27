@@ -15,9 +15,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     aws: grunt.file.readJSON('credentials.json'),
 
-    // By default this processes all .pug files to the root directory
-    // In order to setup a specific directory structure, you'll need to tweak the files config
-    // Use this for reference: https://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
+    // By default this processes all .pug files from/to the root directory
+    // To keep a specific directory structure, you'll need to tweak the files config
+    // https://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
     pug: {
       dist: {
         options: {
@@ -29,10 +29,16 @@ module.exports = function(grunt) {
           },
         },
         files: [
-          grunt.file.expandMapping(['*.pug'], '.tmp/', {
+          {
             cwd: 'app/views',
+            src: ['*.pug'],
+            // here is how you would add another page directory
+            // just make sure you include an index.pug in the root
+            // src: ['*.pug', 'folder/*.pug'],
+            dest: '.tmp/',
             ext: '.html',
-          }),
+            expand: true,
+          },
         ],
       },
       dev: {
@@ -45,10 +51,16 @@ module.exports = function(grunt) {
           },
         },
         files: [
-          grunt.file.expandMapping(['*.pug'], '.tmp/', {
+          {
             cwd: 'app/views',
+            src: ['*.pug'],
+            // here is how you would add another page directory
+            // just make sure you include an index.pug in the root
+            // src: ['*.pug', 'folder/*.pug'],
+            dest: '.tmp/',
             ext: '.html',
-          }),
+            expand: true,
+          },
         ],
       },
     },
