@@ -15,6 +15,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     aws: grunt.file.readJSON('credentials.json'),
 
+    // By default this processes all .pug files to the root directory
+    // In order to setup a specific directory structure, you'll need to tweak the files config
+    // Use this for reference: https://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
     pug: {
       dist: {
         options: {
@@ -26,7 +29,7 @@ module.exports = function(grunt) {
           },
         },
         files: [
-          grunt.file.expandMapping(['*.pug', 'pg/*.pug'], '.tmp/', {
+          grunt.file.expandMapping(['*.pug'], '.tmp/', {
             cwd: 'app/views',
             ext: '.html',
           }),
@@ -42,7 +45,7 @@ module.exports = function(grunt) {
           },
         },
         files: [
-          grunt.file.expandMapping(['*.pug', 'pg/*.pug'], '.tmp/', {
+          grunt.file.expandMapping(['*.pug'], '.tmp/', {
             cwd: 'app/views',
             ext: '.html',
           }),
