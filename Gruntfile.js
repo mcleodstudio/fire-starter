@@ -106,11 +106,6 @@ module.exports = function(grunt) {
             cwd: 'app',
             src: ['robots.txt', 'favicon.ico'],
             dest: 'dist/',
-          }, {
-            expand: true,
-            cwd: 'app/redirects',
-            src: '*',
-            dest: 'dist/',
           },
         ],
       },
@@ -273,7 +268,7 @@ module.exports = function(grunt) {
   grunt.registerTask('check', ['checkDependencies']);
   grunt.registerTask('build', ['pug:dist', 'htmlmin', 'sass', 'copy:media', 'copy:jquery', 'babel', 'postcss', 'uglify', 'copy:dist']);
   grunt.registerTask('build:dev', ['pug:dev', 'htmlmin', 'sass', 'copy:media', 'copy:jquery', 'babel', 'postcss']);
-  grunt.registerTask('deploy', ['check', 'build', 's3:build', 'cloudfront:build']);
+  grunt.registerTask('deploy', ['check', 'clean', 'build', 's3:build', 'cloudfront:build']);
   grunt.registerTask('serve', ['check', 'clean', 'build:dev', 'open', 'http-server', 'watch']);
   grunt.registerTask('default', ['serve']);
 };
